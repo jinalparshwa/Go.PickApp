@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<go.pickapp.Controller.Textview xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="@dimen/_200dp"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/_17sp"
+    android:textColor="#000000"
+    android:gravity="right"
+    android:layout_margin="@dimen/_5dp"
+    android:padding="@dimen/_10dp" />
+    <!--android:padding="@dimen/_5dp"-->

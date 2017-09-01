@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_screen_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_56dp"
+            android:layout_height="@dimen/_56dp"
+            android:src="@drawable/back_new"
+            android:rotation="180"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <go.pickapp.Controller.Textview
+            android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center"
+            android:text="@string/Mobile_number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_50dp"
+        android:src="@drawable/login_screen_logo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:gravity="center"
+        app:theme="@style/MyEditTextTheme">
+
+        <go.pickapp.Controller.Edittext
+            android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/White"
+            android:hint="@string/Mobile_number"
+            android:inputType="number"
+            android:maxLength="8"
+            android:gravity="right"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="@dimen/_14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rr_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_100dp"
+        android:background="@color/Red">
+
+
+        <go.pickapp.Controller.Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/_10dp"
+            android:text="@string/Continue"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_15sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

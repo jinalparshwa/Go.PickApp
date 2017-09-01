@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:text="@string/Your_order_no_is"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_18sp" />
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":-"
+                        android:textColor="@color/Black"/>
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/txt_order_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_10dp"
+                        android:gravity="center"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_18sp" />
+
+                </LinearLayout>
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:gravity="center"
+                    android:text="@string/Kindly_wait_confirmation"
+                    android:textSize="@dimen/_15sp" />
+
+            </LinearLayout>
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:gravity="center"
+                android:text="@string/Thanks_for_choosing_goPickapp"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/_18sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

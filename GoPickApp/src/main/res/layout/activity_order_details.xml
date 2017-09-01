@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="go.pickapp.Activity.Order_detailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_56dp"
+            android:layout_height="@dimen/_56dp"
+            android:src="@drawable/back_new" />
+
+        <go.pickapp.Controller.Textview
+            android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center"
+            android:text="@string/Order_details"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Restaurant_name"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview_Bold
+                    android:id="@+id/res_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Res_address"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/res_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Order_no"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/txt_order_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Status"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/order_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Date"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/txt_order_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/textview2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Payment_type"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/txt_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Total"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text=":" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2">
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/txt_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sp" />
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3dp"
+                        android:text="@string/KD"
+                        android:textSize="@dimen/_8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@color/search_bg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15dp"
+                    android:orientation="horizontal">
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/Item"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/_12sp" />
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Qty"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/_12sp" />
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:text="@string/Price"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/_12sp" />
+
+                    <go.pickapp.Controller.Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3dp"
+                        android:text="@string/KD"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/_5dp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5dp">
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/notext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/No_order_found"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="beforeDescendants" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:background="@color/search_bg">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5dp">
+
+                        <go.pickapp.Controller.Textview
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:layout_weight="3"
+                            android:text="@string/total_"
+                            android:textColor="@color/Red"
+                            android:textSize="@dimen/_12sp" />
+
+                        <go.pickapp.Controller.Textview
+                            android:id="@+id/txt_subtotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/Red"
+                            android:textSize="@dimen/_13sp" />
+
+
+                        <go.pickapp.Controller.Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/_3dp"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:text="@string/KD"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_8dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_20dp"-->
+                <!--android:layout_marginRight="@dimen/_20dp"-->
+                <!--android:layout_marginTop="@dimen/_10dp"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/Coupon_discount"-->
+                <!--android:textSize="@dimen/_12sp" />-->
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:id="@+id/txt_dis_per"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:textSize="@dimen/_12sp" />-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:id="@+id/txt_discount"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="@dimen/_3dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="right"-->
+                <!--android:textColor="@color/Red"-->
+                <!--android:textSize="@dimen/_13sp" />-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="@string/KD"-->
+                <!--android:textColor="@color/Black"-->
+                <!--android:textSize="@dimen/_8dp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_20dp"-->
+                <!--android:layout_marginRight="@dimen/_20dp"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/Service_fee"-->
+                <!--android:textSize="@dimen/_12sp" />-->
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:id="@+id/txt_service_fee"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="@dimen/_12sp" />-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:id="@+id/txt_service"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="@dimen/_3dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:gravity="right"-->
+                <!--android:textColor="@color/Red"-->
+                <!--android:textSize="@dimen/_13sp" />-->
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="@string/KD"-->
+                <!--android:textColor="@color/Black"-->
+                <!--android:textSize="@dimen/_8dp" />-->
+                <!--</LinearLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/black_bg"
+                        android:padding="@dimen/_10dp"
+                        android:paddingLeft="@dimen/_10dp">
+
+                        <go.pickapp.Controller.Textview_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/total"
+                            android:textColor="@color/Red" />
+
+                        <go.pickapp.Controller.Textview
+                            android:id="@+id/txt_total_cart"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_13sp" />
+
+
+                        <go.pickapp.Controller.Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/_3dp"
+                            android:layout_toRightOf="@id/txt_total_cart"
+                            android:text="@string/KD"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_8dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7dp"
+                    android:layout_marginLeft="@dimen/_70dp"
+                    android:layout_marginRight="@dimen/_70dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/txt_cancelled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Red"
+                        android:gravity="center"
+                        android:padding="@dimen/_3dp"
+                        android:text="@string/Cancel"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp"
+                        android:visibility="gone" />
+
+
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/txt_reorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Red"
+                        android:padding="@dimen/_3dp"
+                        android:text="@string/Reorder"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp"
+                        android:visibility="gone" />
+
+                    <go.pickapp.Controller.Textview
+                        android:id="@+id/txt_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Red"
+                        android:padding="@dimen/_3dp"
+                        android:text="@string/Review"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

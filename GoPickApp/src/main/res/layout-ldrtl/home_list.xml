@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rr_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20dp"
+                android:rotation="90"
+                android:layout_height="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@drawable/search_icon" />
+
+            <!--<android.support.v7.widget.SearchView-->
+            <!--android:id="@+id/et_text"-->
+            <!--app:queryBackground="@android:color/transparent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/filter"-->
+            <!--android:background="@null"-->
+            <!--android:hint="@string/Search_for_reastaurant"-->
+            <!--android:queryBackground="@null"-->
+            <!--android:textColor="@color/search_color"-->
+            <!--android:textSize="@dimen/_8dp" />-->
+
+            <go.pickapp.Controller.Edittext
+                android:id="@+id/et_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_40dp"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/Search_for_reastaurant"
+                android:textColor="@color/search_color"
+                android:textSize="@dimen/_14sp" />
+
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:scaleX="-1"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/filter" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/restaurant_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:layout_marginRight="@dimen/_3dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:numColumns="2" />
+
+        <go.pickapp.Controller.Textview
+            android:id="@+id/txt_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/No_res_found"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

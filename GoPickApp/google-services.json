@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "754871893992",
+    "firebase_url": "https://gopickapp-5b7c0.firebaseio.com",
+    "project_id": "gopickapp-5b7c0",
+    "storage_bucket": "gopickapp-5b7c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754871893992:android:729aba3cc771e40c",
+        "android_client_info": {
+          "package_name": "go.pickapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754871893992-ij3v06egq0lq9dcck4120qd988pahdsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "go.pickapp",
+            "certificate_hash": "0234fbbdcbe5f037c923541a033b57aa26455caa"
+          }
+        },
+        {
+          "client_id": "754871893992-23bu6c5jtmjecorrlnidh7nb8g9h7jgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbX-RV6GNjBIggVUe_xrzhgJHQYgczm94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754871893992-23bu6c5jtmjecorrlnidh7nb8g9h7jgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

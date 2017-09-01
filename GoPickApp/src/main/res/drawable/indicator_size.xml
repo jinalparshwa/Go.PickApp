@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:left="@dimen/_10dp"
+        android:right="@dimen/_30dp"
+        android:top="@dimen/_15dp"
+        android:bottom="@dimen/_15dp"
+        android:drawable="@drawable/open_hours_dropdown">
+    </item>
+</layer-list>

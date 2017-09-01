@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_tips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rr_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/first_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_tip"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/tooltip_white_three" />
+
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3dp"
+                    android:gravity="center"
+                    android:text="@string/Select_restaurant"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_15sp" />
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/got_second"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="@dimen/_5dp"-->
+                <!--android:layout_marginTop="@dimen/_7dp"-->
+                <!--android:background="@drawable/selected_cusine_bg">-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/_3dp"-->
+                <!--android:text="@string/Got_it"-->
+                <!--android:textColor="@color/White"-->
+                <!--android:textSize="@dimen/_15sp" />-->
+
+
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

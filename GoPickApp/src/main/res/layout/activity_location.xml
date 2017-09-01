@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_50dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="@dimen/_180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/map_logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_7dp"
+            android:background="@color/map_bottom"
+            android:orientation="vertical">
+
+            <!--<go.pickapp.Controller.Textview-->
+            <!--android:id="@+id/txt_choose_location"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/Choose_location"-->
+            <!--android:textColor="@color/White"-->
+            <!--android:textSize="@dimen/_15sp" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@color/White">
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/txt_manully"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:gravity="center"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/Choose_area"
+                    android:textColor="@color/lan_color" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/_5dp"-->
+                <!--android:layout_marginLeft="@dimen/_8dp"-->
+                <!--android:layout_marginRight="@dimen/_5dp"-->
+                <!--android:layout_marginTop="@dimen/_5dp"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<go.pickapp.Controller.Textview-->
+                <!--android:id="@+id/txt_locate_me"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/locate_me"-->
+                <!--android:textColor="@color/Black"/>-->
+
+                <!--</LinearLayout>-->
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

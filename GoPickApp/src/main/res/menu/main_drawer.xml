@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+    <item
+    android:id="@+id/nav_your_location"
+    android:icon="@drawable/new_menu_map"
+    android:title="@string/Map" />
+
+    </group>
+    <group
+        android:id="@+id/res"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/new_menu_restaurants"
+            android:title="@string/Restaurants" />
+
+    </group>
+    <group
+        android:id="@+id/deal"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_deals"
+            android:icon="@drawable/new_menu_deals"
+            android:title="@string/deals" />
+
+    </group>
+    <group
+        android:id="@+id/notification"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/new_menu_orders"
+            android:title="@string/Orders" />
+
+    </group>
+    <group
+        android:id="@+id/order"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:title="@string/Notification" />
+
+    </group>
+    <group
+        android:id="@+id/account"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/new_menu_account"
+            android:title="@string/Account" />
+    </group>
+    <group
+        android:id="@+id/setting"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/chage_language"
+            android:title="@string/Change_language" />
+    </group>
+    <group
+        android:id="@+id/about"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/new_menu_about"
+            android:title="@string/About" />
+    </group>
+    <group
+        android:id="@+id/logout"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/new_menu_logout"
+            android:title="@string/Logout" />
+    </group>
+
+
+</menu>

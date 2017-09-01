@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        android:background="@drawable/dialog_border"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20dp"
+            android:background="@drawable/black_bg">
+
+            <go.pickapp.Controller.Edittext
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/Enter_promocode_voucher"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_16sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <go.pickapp.Controller.Textview
+                android:id="@+id/con_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:gravity="center|center_horizontal"
+                android:padding="@dimen/_10dp"
+                android:text="@string/Apply"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_16sp" />
+
+            <go.pickapp.Controller.Textview
+                android:id="@+id/con_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:gravity="center|center_horizontal"
+                android:padding="@dimen/_10dp"
+                android:text="@string/CANCEL"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

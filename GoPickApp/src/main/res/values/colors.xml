@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eb2629</color>
+    <color name="colorPrimaryDark">#eb2629</color>
+    <color name="colorAccent">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Dark_Blue">#3a589e</color>
+    <color name="Blue_Transparent">#ff3a589e</color>
+    <color name="Bg_Transparent">#80ffffff</color>
+
+
+    <color name="Red">#eb2629</color>
+    <color name="silver">#cccccc</color>
+    <color name="lan_color">#ff3333</color>
+    <color name="sign_with_email">#999999</color>
+    <color name="fb_color">#2160e4</color>
+    <color name="map_bottom">#ff3333</color>
+    <color name="map_transparant">#1A000000</color>
+    <color name="city_bg">#333333</color>
+    <color name="menu_drawer_bg">#df2f2b</color>
+    <color name="menu_seperate">#e1e1e1</color>
+    <color name="search_bg">#edecec</color>
+    <color name="search_color">#a5a5a5</color>
+    <color name="res_box_color">#e8e8e8</color>
+    <color name="Menu_type_text">#8e8b8b</color>
+    <color name="filter_bg">#e5e5e5</color>
+    <color name="filter_text">#a29e9e</color>
+    <color name="White_transparant">#40000000</color>
+    <color name="exp_bg">#E7E7E5</color>
+</resources>

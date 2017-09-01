@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_screen_logo" />
+
+        <go.pickapp.Controller.Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_60dp"
+            android:layout_marginRight="@dimen/_60dp"
+            android:gravity="center"
+            android:text="@string/Welcome_order"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12sp" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_15dp"
+            app:theme="@style/MyEditTextTheme">
+
+            <go.pickapp.Controller.Edittext
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/White"
+                android:hint="@string/Email"
+                android:gravity="right"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="@dimen/_14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            app:theme="@style/MyEditTextTheme">
+
+            <go.pickapp.Controller.Edittext
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/White"
+                android:hint="@string/Password"
+                android:gravity="right"
+                android:inputType="textPassword"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="@dimen/_14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rr_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/Red">
+
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/Login"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_15sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:orientation="vertical">
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="left"
+                android:text="@string/Forgot_pwd"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sp" />
+
+            <View
+                android:layout_width="@dimen/_80dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:background="@color/White" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

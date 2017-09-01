@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">14sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">30dp</item><!-- menu item height-->
+        <item name="android:listDivider">@color/menu_seperate</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/navigation_bg</item>
+        <item name="android:smallIcon">@dimen/_20dp</item>
+        
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyEditTextTheme">
+        <item name="android:textColorHint">@color/White</item>
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/White</item>
+        
+        
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/Red</item>
+        <item name="android:textSize">@dimen/_20dp</item>
+    </style>
+
+    <style name="Theme.mytheme" parent="android:Theme.Holo">
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+    </style>
+
+
+</resources>

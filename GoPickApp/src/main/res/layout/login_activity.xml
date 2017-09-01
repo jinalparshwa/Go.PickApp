@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_screen_logo" />
+
+        <go.pickapp.Controller.Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_60dp"
+            android:layout_marginRight="@dimen/_60dp"
+            android:gravity="center"
+            android:text="@string/Welcome_order"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@color/fb_color">
+
+            <LinearLayout
+                android:id="@+id/ll_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4dp">
+
+                <ImageView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="@dimen/_15dp"
+                    android:layout_height="@dimen/_15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_50dp"
+                    android:src="@drawable/fb" />
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/Connect_fb"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@color/Red">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_15dp"
+                    android:layout_height="@dimen/_15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_55dp"
+                    android:src="@drawable/gp" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:alpha="0"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/Connect_gplus"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rr_sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@color/sign_with_email">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7dp"
+                android:layout_marginLeft="@dimen/_55dp"
+                android:layout_marginTop="@dimen/_7dp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:src="@drawable/mail" />
+
+
+                <go.pickapp.Controller.Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:gravity="center"
+                    android:text="@string/Sign_with_email"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rr_continue_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@color/sign_with_email"
+            android:padding="@dimen/_8dp"
+            android:visibility="gone">
+
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:gravity="center"
+                android:text="@string/Continue_as_guest"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <go.pickapp.Controller.Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_account"
+                android:textColor="@color/sign_with_email"
+                android:textSize="@dimen/_12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="vertical">
+
+                <go.pickapp.Controller.Textview
+                    android:id="@+id/sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sign_in"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_12sp" />
+
+                <View
+                    android:id="@+id/view_signin"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="0.9dp"
+                    android:background="@color/White" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <go.pickapp.Controller.Textview
+                android:id="@+id/txt_explore_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_20dp"
+                android:text="@string/Explore_more_resaturant"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

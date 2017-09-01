@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="go.pickapp.Activity.Add_reviewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red">
+
+
+        <ImageView
+            android:id="@+id/img_backkk"
+            android:layout_width="@dimen/_56dp"
+            android:layout_height="@dimen/_56dp"
+            android:rotation="180"
+            android:src="@drawable/back_new" />
+
+        <go.pickapp.Controller.Textview
+            android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_10dp"
+            android:gravity="center"
+            android:text="@string/Review"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <go.pickapp.Controller.Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10dp"
+            android:gravity="center"
+            android:text="@string/Thanks_for_choosing_goPickapp"
+            android:textSize="@dimen/_17sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/filter_bg">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <go.pickapp.Controller.Textview_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:gravity="center"
+                        android:text="@string/Rate_your_order"
+                        android:textSize="@dimen/_15sp" />
+
+
+                    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/rating_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        app:srb_borderColor="@color/Red"
+                        app:srb_fillColor="@color/Red"
+                        app:srb_gravity="right"
+                        app:srb_numberOfStars="5"
+                        app:srb_starBorderWidth="1"
+                        app:srb_starCornerRadius="0"
+                        app:srb_starSize="@dimen/_25dp"
+                        app:srb_stepSize="1" />
+
+                    <!--<go.pickapp.Controller.Textview_Bold-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/Preparation_time"-->
+                    <!--android:textSize="@dimen/_15sp" />-->
+
+
+                    <!--<com.iarcuschin.simpleratingbar.SimpleRatingBar-->
+                    <!--android:id="@+id/rating_two"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="@dimen/_5dp"-->
+                    <!--android:layout_marginTop="@dimen/_5dp"-->
+                    <!--app:srb_borderColor="@color/Red"-->
+                    <!--app:srb_fillColor="@color/Red"-->
+                    <!--app:srb_numberOfStars="5"-->
+                    <!--app:srb_starBorderWidth="1"-->
+                    <!--app:srb_starCornerRadius="0"-->
+                    <!--app:srb_starSize="@dimen/_25dp"-->
+                    <!--app:srb_stepSize="1" />-->
+
+                    <!--<go.pickapp.Controller.Textview_Bold-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/Quality_of_food"-->
+                    <!--android:textSize="@dimen/_15sp" />-->
+
+
+                    <!--<com.iarcuschin.simpleratingbar.SimpleRatingBar-->
+                    <!--android:id="@+id/rating_three"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="@dimen/_5dp"-->
+                    <!--android:layout_marginTop="@dimen/_5dp"-->
+                    <!--app:srb_borderColor="@color/Red"-->
+                    <!--app:srb_fillColor="@color/Red"-->
+                    <!--app:srb_numberOfStars="5"-->
+                    <!--app:srb_starBorderWidth="1"-->
+                    <!--app:srb_starCornerRadius="0"-->
+                    <!--app:srb_starSize="@dimen/_25dp"-->
+                    <!--app:srb_stepSize="1" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/_50dp"
+                            android:layout_height="1dp"
+                            android:layout_margin="@dimen/_15dp"
+                            android:background="@color/silver" />
+
+                        <go.pickapp.Controller.Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_15dp"
+                            android:text="@string/Feedabck"
+                            android:textSize="@dimen/_13sp" />
+
+                        <View
+                            android:layout_width="@dimen/_50dp"
+                            android:layout_height="1dp"
+                            android:layout_margin="@dimen/_15dp"
+                            android:background="@color/silver" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70dp"
+                        android:layout_marginLeft="@dimen/_40dp"
+                        android:layout_marginRight="@dimen/_40dp"
+                        android:background="@drawable/comment_bg">
+
+                        <go.pickapp.Controller.Edittext
+                            android:id="@+id/edit_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="right"
+                            android:inputType="textMultiLine"
+                            android:padding="@dimen/_10dp"
+                            android:textSize="@dimen/_12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rr_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_30dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_marginRight="@dimen/_20dp"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:background="@color/Red">
+
+
+                        <go.pickapp.Controller.Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/Submit"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/_15sp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
